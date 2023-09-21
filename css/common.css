@@ -3,7 +3,103 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.ex-1-square:hover{
+    transition: 3s;
+    background-color: red;
+}
+.ex-2-square:active{
+    transition: 3s;
+    width: 100%;
+}
+.ex-3-square:hover{
+    transition: 1s;
+    border-radius: 50%;
+}
+.well:hover .ex-4-square{
+    transition: 2s;
+    width: 0;
+    height: 0;
+}
+.ex-5-square:hover{
+    transition: 1s;
+    width: 100px;
+    height: 100px;
+}
+.ex-5-square:active{
+    transition: 1s;
+    width: 40px;
+    height: 40px;
+}
+.ex-6-img:hover{
+    filter:grayscale(1);
+}
+.ex-7-img:hover{
+    transition: 2s;
+    filter: brightness(.8) grayscale(.8);
+}
+.ex-8-img:hover{
+    transition: 2s;
+    filter: blur(2px) contrast(20%);
+    border-radius: 1rem;
+}
+.ex-9-img:hover{
+    transition: 2s;
+    filter: invert(100%) opacity(50%);
+    border-radius: 1rem;
+    scale: 1.5;
+}
+.ex-10-icon {
+    animation: rotate 0.5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+.ex-11-icon:hover{
+    animation: rotateclock 0.5s linear;
+}
+@keyframes rotateclock {
+    0% {
+        transform: rotate(0);
+    }
+    80% {
+        transform: rotate(320deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+.ex-12-top-white{
+    animation: movetop 2s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes movetop {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 0%;
+    }
+}
+.ex-12-bottom-white{
+    animation: movebot 2s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes movebot {
+    0% {
+        right: 0%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 0%;
+    }
+}
 .margin-top-15 {
     margin-top: 15px;
 }
